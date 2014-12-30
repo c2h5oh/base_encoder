@@ -1,4 +1,4 @@
-package base_encoder
+package baseencoder
 
 import (
 	"testing"
@@ -6,8 +6,9 @@ import (
 
 func Test_Base62Encode(t *testing.T) {
 	testValues := map[string]int64{
-		"0":  0,
-		"1B": 99,
+		"0":    0,
+		"1B":   99,
+		"1MmC": 424242,
 	}
 
 	for token, value := range testValues {
@@ -21,8 +22,9 @@ func Test_Base62Encode(t *testing.T) {
 
 func Test_MimeBase64Encode(t *testing.T) {
 	testValues := map[string]int64{
-		"A":  0,
-		"Bj": 99,
+		"A":    0,
+		"Bj":   99,
+		"Bnky": 424242,
 	}
 
 	for token, value := range testValues {
@@ -36,8 +38,9 @@ func Test_MimeBase64Encode(t *testing.T) {
 
 func Test_Base64UrlEncode(t *testing.T) {
 	testValues := map[string]int64{
-		"A":  0,
-		"Bj": 99,
+		"A":    0,
+		"Bj":   99,
+		"Bnky": 424242,
 	}
 
 	for token, value := range testValues {
@@ -51,8 +54,9 @@ func Test_Base64UrlEncode(t *testing.T) {
 
 func Test_Base62Decode(t *testing.T) {
 	testValues := map[string]int64{
-		"0":  0,
-		"1B": 99,
+		"0":    0,
+		"1B":   99,
+		"1MmC": 424242,
 	}
 
 	for token, value := range testValues {
@@ -66,8 +70,9 @@ func Test_Base62Decode(t *testing.T) {
 
 func Test_MimeBase64Decode(t *testing.T) {
 	testValues := map[string]int64{
-		"A":  0,
-		"Bj": 99,
+		"A":    0,
+		"Bj":   99,
+		"Bnky": 424242,
 	}
 
 	for token, value := range testValues {
@@ -81,8 +86,9 @@ func Test_MimeBase64Decode(t *testing.T) {
 
 func Test_Base64UrlDecode(t *testing.T) {
 	testValues := map[string]int64{
-		"A":  0,
-		"Bj": 99,
+		"A":    0,
+		"Bj":   99,
+		"Bnky": 424242,
 	}
 
 	for token, value := range testValues {

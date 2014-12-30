@@ -1,4 +1,4 @@
-package base_encoder
+package baseencoder
 
 import (
 	"bytes"
